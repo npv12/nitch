@@ -2,4 +2,4 @@ import
   std/[osproc, strutils]
 
 proc getFlatpakPkgs*(): string =
-  result = osproc.execCmdEx("flatpak list | wc --lines")[0]
+  result = osproc.execCmdEx("flatpak list | wc --lines")[0].replace("\n", "")
