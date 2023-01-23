@@ -4,7 +4,7 @@ import
 
 func getLogo*(distroId: string): tuple =
   const
-    coloredLogos: array[16, tuple] = [
+    coloredLogos: array[18, tuple] = [
       (fgRed, nitchLogo),
       (fgBlue, archLogo),
       (fgRed, ubuntuLogo),
@@ -20,7 +20,9 @@ func getLogo*(distroId: string): tuple =
       (fgRed, redhatLogo),
       (fgMagenta, gentooLogo),
       (fgMagenta, endeavourosLogo),
-      (fgBlue, artixLogo)
+      (fgBlue, artixLogo),
+      (fgBlue, garudaLogo),
+      (fgCyan, alpineLogo)
     ]
 
   case distroId:
@@ -68,6 +70,12 @@ func getLogo*(distroId: string): tuple =
 
   of "artix":
     result = coloredLogos[15]
+
+  of "garuda":
+    result = coloredLogos[16]
+
+  of "alpine":
+    result = coloredLogos[17]
 
   else:
     result = coloredLogos[0]
