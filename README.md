@@ -1,24 +1,6 @@
 <div align="center">
 
 <img src="https://cdn.discordapp.com/attachments/955362477137362954/996769449480826971/2022-07-13_16-25.png" width="350px">
-
-# `NiTch`
-
-<h3>
-  incredibly fast system fetch written in <code>nim👑</code>
-</h3>
-<br>
-
-![Maintenance](https://shields.io/maintenance/yes/2022?style=for-the-badge)
-![License](https://shields.io/github/license/unxsh/nitch?style=for-the-badge)
-![Commits](https://shields.io/github/commit-activity/m/unxsh/nitch?style=for-the-badge)
-
-![GitHub Repo stars](https://img.shields.io/github/stars/unxsh/nitch?style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/unxsh/nitch?style=for-the-badge)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/unxsh/nitch?style=for-the-badge)
-
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/unxsh/nitch?style=for-the-badge)
-
 </div>
 
 # Description 📖
@@ -33,16 +15,13 @@ and linux systems architecture
 
 If anything in the source code is unclear or is lacking in its explanation, open an issue. Sometimes you get too close to something and you fail to see the "bigger picture"!
 
-
-btw written in `nim👑`
-
-why `nim👑`? because it's fast and simple
+This is the fork of original project with a few fixes from mitch and some personal changes including ability to show number of flatpak pkgs
 
 <br>
 
 # Installation ☁️
-```fish
-wget https://raw.githubusercontent.com/unxsh/nitch/main/setup.sh && sh setup.sh
+```sh
+wget https://raw.githubusercontent.com/npv12/nitch/main/setup.sh && sh setup.sh
 ```
 
 # Usage 🪨
@@ -145,20 +124,22 @@ proc drawInfo*() =
   stdout.styledWrite(styleBright, "  ╰───────────╯\n\n")
 ```
 
-# Building 📦
+# Building
+ARM users currently must build from source (I know, sorry 🙁)
+
 ### 0) install [nim](https://nim-lang.org/)
 
 ### 1) clone repo
-```fish
-git clone https://github.com/unxsh/nitch.git
+```sh
+git clone https://github.com/npv12/nitch.git
 ```
 ### 2) change dir to `nitch`
-```fish
+```sh
 cd nitch/
 ```
 
 ### 3) build program with `nimble`
-```fish
+```sh
 nimble build
 ```
 After that you will get a ready-made binary file in the root directory of the project.
@@ -166,7 +147,7 @@ After that you will get a ready-made binary file in the root directory of the pr
 <br>
 
 # File architecture 📁
-```fish
+```sh
 nitch
   ├── LICENSE
   ├── nitch
@@ -215,3 +196,5 @@ nitch
 - [paleofetch](https://github.com/ss7m/paleofetch)
 - [rxfetch](https://github.com/Mangeshrex/rxfetch)
 - [nerdfetch](https://github.com/ThatOneCalculator/NerdFetch)
+- [nitch](https://github.com/unxsh/nitch)
+- [mitch](https://github.com/raynei86/mitch)
