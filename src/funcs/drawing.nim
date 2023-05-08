@@ -18,15 +18,15 @@ proc drawInfo*(asciiArt: bool) =
     # (fgRed, nitchLogo)
 
   const  # icons before cotegores
-    userIcon   = " "  # recomended: " " or "|>"
+    userIcon   = " "  # recomended: " " or "|>"
     hnameIcon  = " "  # recomended: " " or "|>"
-    distroIcon = " "  # recomended: " " or "|>"
-    kernelIcon = " "  # recomended: " " or "|>"
+    distroIcon = " "  # recomended: " " or "|>"
+    kernelIcon = " "  # recomended: " " or "|>"
     uptimeIcon = " "  # recomended: " " or "|>"
-    shellIcon  = " "  # recomended: " " or "|>"
-    pkgsIcon   = " "  # recomended: " " or "|>"
-    ramIcon    = " "  # recomended: " " or "|>"
-    colorsIcon = " "  # recomended: " " or "->"
+    shellIcon  = " "  # recomended: " " or "|>"
+    pkgsIcon   = " "  # recomended: " " or "|>"
+    ramIcon    = "󰍛 "  # recomended: " " or "|>"
+    colorsIcon = " "  # recomended: " " or "->"
     # please insert any char after the icon
     # to avoid the bug with cropping the edge of the icon
 
