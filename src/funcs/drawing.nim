@@ -25,7 +25,7 @@ proc drawInfo*(asciiArt: bool) =
     uptimeIcon = " "  # recomended: " " or "|>"
     shellIcon  = " "  # recomended: " " or "|>"
     pkgsIcon   = " "  # recomended: " " or "|>"
-    ramIcon    = "󰍛 "  # recomended: " " or "|>"
+    ramIcon    = "󰍛"  # recomended: " " or "|>"
     colorsIcon = " "  # recomended: " " or "->"
     # please insert any char after the icon
     # to avoid the bug with cropping the edge of the icon
@@ -57,7 +57,7 @@ proc drawInfo*(asciiArt: bool) =
   var 
     pkgsInfo     = getPkgs(distroId)  # get amount of packages in distro
   
-  if flatpakInfo != "0":
+  if flatpakInfo != "0" and not flatpakInfo.contains("flatpak: command not found"):
     pkgsInfo = pkgsInfo & " (flatpak " & flatpakInfo & ")"
 
   const  # aliases for colors

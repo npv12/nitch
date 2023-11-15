@@ -44,5 +44,8 @@ proc getPkgs*(distroId: string): string =
   of "flatpak":
     result = getFlatpakPkgs()
 
+  of "opensuse-tumbleweed":
+    result = getRpmPkgs()
+
   else:
     result = ">3"
